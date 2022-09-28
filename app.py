@@ -3,6 +3,6 @@ from flask import Flask
 app = Flask("projeto")
 @app.route("/")
 def ola_mundo():
-    return "Olá Mundo! Bem Vindo ao Teste no novo projeto!!", 200
+    return "Olá Mundo! Projeto Teste 3!!", 200
 
 app.run()
