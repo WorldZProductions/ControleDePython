@@ -11,4 +11,9 @@ def ola_mundo():
 
     return render_template ("alo.html", n=nome, aProdutos=produtos), 200
     
+# Nova Rota Teste
+@app.route("/teste")
+def funcao_teste():
+    return "Nova rota teste", 200
+    
 app.run()
