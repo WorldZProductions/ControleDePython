@@ -1,10 +1,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Teste Jinja2 {{ n }} </title>
+    <title>Alô mundo com Jinja2</title>
 </head>
 <body>
-    Olá, Jinja2 será utilizado aqui.<br>
-    Nome: {{ n }}
+    Olá, vamos usar arquivos HTML<br>
+    Nome do comprador: {{ n }}
+    <table border="1">
+        {% for prod in aProdutos %}
+        <tr>
+            <td>{{ prod.nome }}</td>
+            <td>{{ prod.preco }}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>

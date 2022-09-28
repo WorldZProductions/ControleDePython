@@ -4,6 +4,10 @@ app = Flask("projeto")
 @app.route("/")
 def ola_mundo():
     nome="World Z"
-    return render_template ("alo.html", n=nome), 200
+    produtos= [
+    {"nome": "Tablet Gráfico  - Básico", "preco": 399.90},
+    {"nome": "PC Gamer - Simples", "preco": 999.99}]
+
+    return render_template ("alo.html", n=nome, aProdutos=produtos), 200
     
 app.run()
